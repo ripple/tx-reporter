@@ -4,7 +4,7 @@ const WebSocket = require('ws')
 const slack = require('./slack')
 const { nameOfAmendmentID } = require('./amendments')
 
-const rippledUri = processnpmv['RIPPLED_URI']
+const rippledUri = process.env['RIPPLED_URI']
 
 function messageSlack (message) {
   slack.webhook({
