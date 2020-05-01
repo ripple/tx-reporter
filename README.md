@@ -1,6 +1,6 @@
-# Ripple Transaction Reporter
+# XRPL Transaction Reporter
 
-Reports Ripple ledger transactions to Slack
+Reports XRP Ledger transactions to Slack
 
 ## Usage
 
