@@ -3,9 +3,13 @@
   "dependencies": {
     "node-fetch": "^2.6.0",
     "slack-node": "^0.1.8",
-    "ws": "^7.2.0"
+    "ws": "^2.2.1"
   },
   "scripts": {
-    "start": "node index.js"
+    "start": "node index.js",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "jest": "^25.5.3"
   }
 }
