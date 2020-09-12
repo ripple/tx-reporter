@@ -1,7 +1,7 @@
 {
   "version": "0.1.0",
   "dependencies": {
-    "node-fetch": "^2.6.0",
+    "node-fetch": "^2.6.1",
     "slack-node": "^0.1.8",
     "ws": "^2.2.1"
   },
