@@ -1,4 +1,5 @@
 exports.types = {
     enableAmendment: require('./EnableAmendment'),
-    ticketCreate: require('./TicketCreate')
+    ticketCreate: require('./TicketCreate'),
+    transactionWithTicket: require('./TransactionWithTicket')
 };

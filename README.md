@@ -2,10 +2,11 @@
 
 Reports XRP Ledger transactions to Slack
 
-## Transaction Types Supported
+## Supported Notifications
 
 - EnableAmendment
 - TicketCreate
+- Transactions using a Ticket
 
 ## Usage
 

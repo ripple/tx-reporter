@@ -2,7 +2,6 @@
 
 const WebSocket = require('ws')
 const slack = require('./slack')
-const enableAmendment = require('./types/EnableAmendment')
 const { types } = require('./types')
 
 const rippledUri = process.env['RIPPLED_URI']
@@ -86,8 +85,10 @@ async function handleMessage(dataString) {
         messageSlack(types.ticketCreate.message(data));
         break;
       default:
-        //
+        // 
     }
+
+    if (data.transaction.TicketSequence) messageSlack(types.transactionWithTicket.message(data));
     
     if (ledger < data.ledger_index) {
       ledger = data.ledger_index
